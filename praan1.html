@@ -1,0 +1,283 @@
+<html>
+    <head>
+        <title>Global Care</title>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <style>
+     
+*{
+    margin:0px;
+    padding:0px;
+    scroll-behavior: smooth;
+}
+.navbar{
+    border-radius:0;
+  border-color:transparent;
+  z-index:10;
+}
+img {
+    width:100%;
+    max-width:100%
+}
+.navbar-collapse{
+      margin-right:20px;
+  }
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+        
+        height: 550px;
+        min-width: 100%;
+        width: 100%;
+        max-width: 100%;
+        
+    }
+.carousel-controls {
+display: -ms-flexbox;
+display: cover;
+-ms-flex-pack: justify;
+justify-content: space-between;
+position: absolute;
+width: 100%;
+top: 50%;
+margin:0;
+}
+
+ 
+
+.carousel-controls a {
+
+font-size: 30px;
+
+}
+
+.carousel-controls a:hover {
+
+background-color: rgba(255, 255, 255, 0.9);
+
+}
+.carousel-caption {
+    top: 30%;
+    bottom: auto;
+}
+.button {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 15px 60px;
+    display: inline-block;
+    margin: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    border-radius: 10px;
+    
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.button:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.button-1,.button-2{
+    border: 3px solid #fff;
+    color: #fff;
+    overflow: hidden;
+}
+.button-1:after,.button-2:after {
+    width: 101%;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    opacity: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+.button-1:hover,.button-2:hover,
+.button-1:active,.button-2:active {
+    color: #0e83cd;
+}
+.button-1:hover:after,.button-2:hover:after {
+    height: 104%;
+    opacity: 1;
+}
+.button-1:active:after,.button-2:active:after {
+    height: 130%;
+    opacity: 1;
+}
+.button-3,.button-4{
+    -webkit-box-shadow: 0 4px #ab3c3c;
+    -moz-box-shadow: 0 4px #ab3c3c;
+    box-shadow: 0 4px #ab3c3c;
+}
+.button-3:hover,.button-4:hover,
+.button-3:active,.button-4:active {
+    color: #eb2626c9;
+} 
+  </style>
+  </head>
+    <body style="background-color:rgb(228, 204, 204);">
+        <header>
+            
+                    
+            <nav class="navbar navbar-default  navbar-static-top" id ="navbar">
+                    <div class="conatiner">    
+                <div class="navbar-header"><a class="navbar-brand" href="#" style="font-size: 30px; font-family:Times New Roman">Global Care</a>
+                    
+                    
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                          <span class="sr-only">Toggle navigation</span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                          <span class="icon-bar"></span>
+                      </button>	
+                    </div>
+                      
+                       
+                      <div class="navbar-collapse collapse" >
+                        <ul class="nav navbar-nav  navbar-right">
+                          
+                        
+                          <li class="nav-item"><a href="praan1.html">HOME
+                              <span class="sr-only">(current)</span>
+                                    </a>
+                          </li>
+                          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Post A Job<b class="caret"></b>
+			                    <ul class="dropdown-menu">
+				                    <li class="dropdown-header">Jobs</li>
+				                    <li><a href="#">Job-1</a></li>
+				                    <li><a href="#">Job-2</a></li>
+			                    </ul> 
+                          </li>
+                          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Find A Job<b class="caret"></b>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-header">Jobs</li>
+                                <li><a href="#">Job-1</a></li>
+                                <li><a href="#">Job-2</a></li>
+                            </ul> 
+                      </li>
+                          <li class="nav-item"><a href="#">ABOUT US</a>
+                          </li>
+                          <li class="nav-item "><a href="#">CONTACT US</a>
+                          </li>
+                        </ul>
+                       </div>
+                    </div>
+                </nav>
+
+                <div class="container" >
+                             
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                          </ol>
+                      
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                              <img src="job.jpg" alt="Los Angeles" style="opacity:0.8;" >
+                              <div class="carousel-caption">
+                              <h2 style="font-size:70px;color:smokewhite;font-family: Arial, Helvetica, sans-serif">Welcome to Global Care!!</h2>
+                            </div>
+                            </div>
+                      
+                            <div class="item">
+                              <img src="1.jpg" alt="Chicago" style="opacity:0.8;">
+                              <div class="carousel-caption">
+                              <h2 style="font-size:70px;color:smokewhite;font-family: Arial, Helvetica, sans-serif">Find Your Dream Job...</h2>
+                              <button class="button button-1 button-1a">Find Job</button>
+                            </div>
+                            </div>
+                          
+                            <div class="item">
+                              <img src="3.jpg" alt="New york" style="opacity:0.8;">
+                              <div class="carousel-caption">
+                              <h2 style="font-size:70px;color:smokewhite;font-family: Arial, Helvetica, sans-serif">Choose Best Candidate...  </h2>
+                              <button class="button button-2 button-2a">Post Job</button>
+                            </div>
+                        </div>
+                          </div>
+                        </div>
+                    </div>
+                          <!-- Left and right controls -->
+                          <div class="carousel-controls">
+                          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
+                    
+                </header><br/>
+
+                <div class="container" style="text-align: center;">
+                        <div class="row">
+                            <div class="col-sm-6">
+
+                    
+                             <div class="panel panel-default"id="panel">
+                             <div class="panel-body">
+                            
+                            <h3 id="text">Easiest Way To Find Your Dream Job</h3>
+                            <h4 id="text">Find A Job</h4>
+                            <button class="button button-3 button-3a">Login</button>
+                            <button class="button button-3 button-3a">Register</button>
+                            </div>
+                            </div>
+                            </div>
+                            <div class="col-sm-6">
+                            <div class="panel panel-default"id="panel2">
+                            <div class="panel-body">
+                                <h3 id="text">Hire Skilled People, Best Of Them</h3>
+                                <h4 id="text">Post A Job</h4>
+                                <button class="button button-4 button-4a">Login</button>
+                                <button class="button button-4 button-4a">Register</button>
+                            </div>
+                            </div>
+                            </div>
+                    </div>
+                    </div>
+                
+                
+                
+                
+                
+                            
+                    <div class="navbar navbar-inverse navbar-static-bottom" style="bottom:0px;margin:0px;">
+                            
+                            <div class="conatiner"style="text-align:center;">
+                            <div class="navbar-text">
+                            <p style="color:white;font-size:10px;text-align:center; ">copyright <a href="#"> </a> 2019</p>
+                            </div>
+                            
+                            </div>
+                            </div>  
+                  
+        
+                
+
+    </body>
+</html>
